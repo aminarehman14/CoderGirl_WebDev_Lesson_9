@@ -12,12 +12,15 @@ var word = 'CAR'; // ALL CAPS
 var isGuessingLetter = false;
 
 // Ask player if they would like to guess a letter or guess the word
-var letterOrWord = prompt("Would you like to guess the letter or the word?", "Letter");
+//var letterOrWord = prompt("Would you like to guess the letter or the word?", "Letter");
 // If they are guessing a letter, set the letter that they are
 // guessing.	
-if (letterOrWord == "Letter"){
-		var letter = prompt("Enter the letter you would like to guess.", "");
-	if (letter != "") {
+//if (letterOrWord == "Letter"){
+	isGuessingLetter = true;
+//		var letter = prompt("Enter the letter you would like to guess.",);
+		letter = "T"
+//	if (letter != "") {
+	if (isGuessingLetter == true) {
 		if (letter == "C") {
             console.log(Letter+"**");
 		} else if (letter == "A") {
@@ -28,19 +31,25 @@ if (letterOrWord == "Letter"){
 			console.log("Sorry, no " + letter +"!");
 
 		}
-	 } else if (Letter == ""){
-		 console.log("Please guess a letter!");
-	 }
+	
+//	 } else if (Letter == ""){
+//		 console.log("Please guess a letter!");
+//	 }
 		
-		} else if (letterOrWord == "Word"){
-console.log("word")
+//} else if (letterOrWord == "Word"){
+	isGuessingLetter = false; 
+	}else if (isGuessingLetter == false) {
+	if (word == "CAR") {
+       	console.log("Congratulations! You won Wheel Of Fortune!");
+       }    
+       else if (word != "CAR") {
+       	console.log("Nope, keep trying!");
+       }
 }
-console.log("******")
-var isGuessingLetter = true; // set to false to guess solution
+	
+ // set to false to guess solution
 
-
-
-var letter = 'A'; // UPPERCASE
+ // UPPERCASE
 
 // SCRIPT ////////////////////////////////////////////////////////////
 
