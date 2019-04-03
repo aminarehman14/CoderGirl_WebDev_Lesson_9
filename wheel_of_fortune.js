@@ -10,6 +10,7 @@
 
 var word = 'CAR'; // ALL CAPS
 var isGuessingLetter = false;
+var guessedWord = "CAR";
 
 // Ask player if they would like to guess a letter or guess the word
 //var letterOrWord = prompt("Would you like to guess the letter or the word?", "Letter");
@@ -38,8 +39,9 @@ var isGuessingLetter = false;
 		
 //} else if (letterOrWord == "Word"){
 	isGuessingLetter = false; 
+	
 	}else if (isGuessingLetter == false) {
-	if (word == "CAR") {
+	if (guessedWord == "CAR") {
        	console.log("Congratulations! You won Wheel Of Fortune!");
        }    
        else if (word != "CAR") {
